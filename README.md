@@ -22,3 +22,27 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+##user table
+
+|Column|Type|Options|
+|-------|----|-------|
+|user_name|integre|null:false|
+|password|integre|null:false|
+
+##post table
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integre|null:false, foregn_key: true|
+|text|text|         |
+
+##comment table
+
+|Column|Type|Options|
+|------|----|-------|
+|comment| text|     |
+|user_id| integre|  |
+|post_id| integre|  |
+
